@@ -1,0 +1,141 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 15:40:06 on Aug 14,2025
+# vlog -reportprogress 300 apb.sv "+acc" 
+# ** Note: (vlog-2286) apb.sv(2): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package apb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface apb_if
+# -- Compiling module apb_design_n
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 15:40:07 on Aug 14,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim tb 
+# Start time: 15:40:07 on Aug 14,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "apb_design_n(fast)".
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.apb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.apb_if(fast)
+# Loading work.apb_design_n(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.apb_if(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /apb_sv_unit File: apb.sv Line: 166
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /apb_sv_unit File: apb.sv Line: 206
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /apb_sv_unit::apb_drv File: apb.sv Line: 135
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+add wave -position insertpoint sim:/tb/uut/*
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_test...
+# UVM_INFO apb.sv(215) @ 10: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=  0
+# UVM_INFO apb.sv(215) @ 20: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=  0
+# UVM_INFO apb.sv(215) @ 30: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=  0
+# UVM_INFO apb.sv(188) @ 40: uvm_test_top.env.a1.mon1 [MON1] pwdata=0,paddr=0,pwrite=0
+# UVM_INFO apb.sv(280) @ 40: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=0,pkt2.prdata=0
+# UVM_INFO apb.sv(215) @ 40: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=  0
+# UVM_INFO apb.sv(215) @ 50: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata= 36
+# UVM_INFO apb.sv(215) @ 60: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata= 36
+# UVM_INFO apb.sv(188) @ 70: uvm_test_top.env.a1.mon1 [MON1] pwdata=36,paddr=129,pwrite=0
+# UVM_INFO apb.sv(280) @ 70: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=36,pkt2.prdata=36
+# UVM_INFO apb.sv(215) @ 70: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata= 36
+# UVM_INFO apb.sv(215) @ 80: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=  9
+# UVM_INFO apb.sv(215) @ 90: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=  9
+# UVM_INFO apb.sv(188) @ 100: uvm_test_top.env.a1.mon1 [MON1] pwdata=9,paddr=99,pwrite=0
+# UVM_INFO apb.sv(280) @ 100: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=9,pkt2.prdata=9
+# UVM_INFO apb.sv(215) @ 100: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=  9
+# UVM_INFO apb.sv(215) @ 110: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata= 13
+# UVM_INFO apb.sv(215) @ 120: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata= 13
+# UVM_INFO apb.sv(188) @ 130: uvm_test_top.env.a1.mon1 [MON1] pwdata=13,paddr=141,pwrite=0
+# UVM_INFO apb.sv(280) @ 130: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=13,pkt2.prdata=13
+# UVM_INFO apb.sv(215) @ 130: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata= 13
+# UVM_INFO apb.sv(215) @ 140: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=101
+# UVM_INFO apb.sv(215) @ 150: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=101
+# UVM_INFO apb.sv(188) @ 160: uvm_test_top.env.a1.mon1 [MON1] pwdata=101,paddr=18,pwrite=0
+# UVM_INFO apb.sv(280) @ 160: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=101,pkt2.prdata=101
+# UVM_INFO apb.sv(215) @ 160: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=101
+# UVM_INFO apb.sv(215) @ 170: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=  1
+# UVM_INFO apb.sv(215) @ 180: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=  1
+# UVM_INFO apb.sv(188) @ 190: uvm_test_top.env.a1.mon1 [MON1] pwdata=1,paddr=13,pwrite=0
+# UVM_INFO apb.sv(280) @ 190: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=1,pkt2.prdata=1
+# UVM_INFO apb.sv(215) @ 190: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=  1
+# UVM_INFO apb.sv(215) @ 200: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=118
+# UVM_INFO apb.sv(215) @ 210: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=118
+# UVM_INFO apb.sv(188) @ 220: uvm_test_top.env.a1.mon1 [MON1] pwdata=118,paddr=61,pwrite=0
+# UVM_INFO apb.sv(280) @ 220: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=118,pkt2.prdata=118
+# UVM_INFO apb.sv(215) @ 220: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=118
+# UVM_INFO apb.sv(215) @ 230: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=237
+# UVM_INFO apb.sv(215) @ 240: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=237
+# UVM_INFO apb.sv(188) @ 250: uvm_test_top.env.a1.mon1 [MON1] pwdata=237,paddr=140,pwrite=0
+# UVM_INFO apb.sv(280) @ 250: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=237,pkt2.prdata=237
+# UVM_INFO apb.sv(215) @ 250: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=237
+# UVM_INFO apb.sv(215) @ 260: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=249
+# UVM_INFO apb.sv(215) @ 270: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=249
+# UVM_INFO apb.sv(188) @ 280: uvm_test_top.env.a1.mon1 [MON1] pwdata=249,paddr=198,pwrite=0
+# UVM_INFO apb.sv(280) @ 280: uvm_test_top.env.sb [SB MATCHED] pkt1.prdata=249,pkt2.prdata=249
+# UVM_INFO apb.sv(215) @ 280: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=249
+# UVM_INFO apb.sv(215) @ 290: uvm_test_top.env.a2.mon2 [MON2] pready=1,prdata=197
+# UVM_INFO apb.sv(215) @ 300: uvm_test_top.env.a2.mon2 [MON2] pready=0,prdata=197
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 300: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   52
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MON1]     9
+# [MON2]    30
+# [Questa UVM]     2
+# [RNTST]     1
+# [SB MATCHED]     9
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 300 ns  Iteration: 64  Instance: /tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
